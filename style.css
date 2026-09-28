@@ -39,3 +39,7 @@
 @media(max-width:800px){.memory-intro{margin-bottom:0}.memory-collage{width:100%}.memory-caption{margin:8px auto 0}}
 
 .discord-request{margin-top:34px;font:italic 27px 'Cormorant Garamond',serif;color:#d9a9b8;letter-spacing:.2px;animation:softPulse 3s ease-in-out infinite}.discord-request span{font-style:normal;margin-left:5px}@keyframes softPulse{50%{opacity:.62;transform:translateY(-2px)}}
+
+
+/* Artwork chapter */
+.artwork-section{background:radial-gradient(circle at 50% 35%,#2c1d27 0%,#111016 45%,#09090d 100%);min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:130px 7vw}.artwork-content{width:100%;max-width:1200px;margin:0 auto;text-align:center}.artwork-content h2{margin-bottom:28px}.artwork-intro{max-width:650px;margin:0 auto 55px;color:#a9a3a4;font-size:15px;line-height:1.9}.artwork-frame{width:100%;max-width:1150px;margin:0 auto;padding:9px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);box-shadow:0 35px 100px rgba(0,0,0,.6),0 0 80px rgba(180,120,160,.08);overflow:hidden}.artwork-frame img{display:block;width:100%;height:auto;border:1px solid rgba(255,255,255,.08);transition:transform 1s cubic-bezier(.2,.7,.2,1)}.artwork-frame:hover img{transform:scale(1.012)}.artwork-caption{max-width:720px;margin:38px auto 0;color:#b7afb2;font:italic 25px/1.6 'Cormorant Garamond',serif}@media(max-width:800px){.artwork-section{padding:110px 6vw}.artwork-frame{padding:5px}.artwork-caption{font-size:20px}.artwork-intro{margin-bottom:35px}}
