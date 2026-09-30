@@ -140,6 +140,32 @@
 </section>
 </main>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
+
+<!-- Atmospheric music control -->
+<div class="music-orb" id="musicOrb" aria-label="Music controls">
+  <button class="music-orb__button" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
+    <span class="music-orb__rings"></span>
+    <span class="music-orb__icon" aria-hidden="true">▶</span>
+    <span class="music-orb__waves" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <button class="music-details" id="musicDetails" type="button" aria-label="Open music settings" aria-expanded="false" aria-controls="musicPanel">···</button>
+  <div class="music-orb__panel" id="musicPanel" aria-hidden="true" inert>
+    <div class="music-orb__label">A song for this chapter</div>
+    <div class="music-orb__title">Cinnamon Girl</div>
+    <div class="music-orb__status" id="musicStatus" role="status" aria-live="polite">Music begins with your story</div>
+    <button id="musicMute" class="music-mute" type="button" aria-label="Mute music" aria-pressed="false">Mute</button>
+    <input id="musicVolume" class="music-orb__volume" type="range" min="0" max="1" step="0.01" value="0.22" aria-label="Music volume">
+  </div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<audio id="chapterAudio" preload="metadata" loop>
+  <source src="audio/cinnamon-girl.mp3" type="audio/mpeg">
+</audio>
+
+<div id="touchHearts" class="touch-hearts" aria-hidden="true"></div>
 </body>
 </html>
